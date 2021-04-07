@@ -84,7 +84,7 @@ export default function ContactForm() {
       </label>
       <div className="text-center mt-3">
         <ReCAPTCHA
-          sitekey={process.env.RECAPTCHA_SITE_KEY}
+          sitekey="6LeBn54aAAAAAKRelu8Dgcn3_-EgweDm0UMvpPxb"
           size="invisible"
           ref={reRef}
         />
