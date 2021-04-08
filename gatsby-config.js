@@ -41,5 +41,15 @@ module.exports = {
         exclude: [],
       },
     },
+    {
+      resolve: `gatsby-plugin-google-gtag`,
+      options: {
+        trackingIds: ["G-RV1731PFL3"],
+      },
+      pluginConfig: {
+        head: true,
+        respectDNT: true,
+      },
+    },
   ],
 }
