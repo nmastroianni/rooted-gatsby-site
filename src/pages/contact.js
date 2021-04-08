@@ -12,7 +12,13 @@ export default function Contact({ location }) {
         Contact Us
       </h1>
       <h2 className="text-center text-lg sm:text-xl lg:text-2xl mt-1 sm:mt-2 lg:mt-3">
-        Send Us an Email or Call Us: 1-856-375-2440
+        Send Us an Email or Call Us:{" "}
+        <a
+          href="tel:1-856-375-2440"
+          className="text-indigo-800 hover:underline"
+        >
+          1-856-375-2440
+        </a>
       </h2>
       <div className="container max-w-3xl mx-auto rounded-md p-2">
         <ContactForm></ContactForm>

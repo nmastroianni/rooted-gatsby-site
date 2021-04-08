@@ -9,7 +9,9 @@ export default function AboutCard(props) {
         className="rounded-t-md"
         alt={"decorative element for the " + props.title + " section"}
       />
-      <h3 className="text-xl text-indigo-800 text-center">{props.title}</h3>
+      <h3 className="text-xl text-indigo-900 text-center font-semibold">
+        {props.title}
+      </h3>
       <div className="p-3 text-indigo-800">{props.children}</div>
     </div>
   )

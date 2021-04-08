@@ -1,5 +1,5 @@
 import React from "react"
-import { graphql } from "gatsby"
+import { Link, graphql } from "gatsby"
 import Seo from "../components/Seo"
 import Hero from "../components/Hero"
 import Navbar from "../components/Navbar"
@@ -27,8 +27,8 @@ export default function Home(props) {
         </h2>
         <div className="container mx-auto px-2 sm:px-0 sm:pt-4 sm:pb-4">
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
-            <div className="px-1 sm:px-3">
-              <h3 className="text-xl text-center text-indigo-800 m-2 sm:m-3">
+            <div className="px-1 sm:px-3 text-center">
+              <h3 className="text-xl text-indigo-800 m-2 sm:m-3 font-semibold">
                 Hours
               </h3>
               <p className="text-center mb-2 sm:mb-3">
@@ -36,15 +36,27 @@ export default function Home(props) {
                 hours. Each therapist will work with individuals to tailor a
                 therapy schedule that is sustainable.
               </p>
+              <a
+                href="tel:18563752400"
+                className="inline-block bg-indigo-900 rounded-md px-3 py-2 self-end text-white hover:bg-gray-300 hover:text-gray-900 border hover:border-black"
+              >
+                Call Us
+              </a>
             </div>
-            <div className="px-1 sm:px-3">
-              <h3 className="text-xl text-center text-indigo-800 m-2 sm:m-3">
+            <div className="px-1 sm:px-3 text-center">
+              <h3 className="text-xl text-indigo-800 m-2 sm:m-3 font-semibold">
                 Address
               </h3>
-              <p className="text-center mb-2 sm:mb-3">
+              <p className="mb-2 sm:mb-3">
                 1878 East Marlton Pike Suite 5 <br />
                 Cherry Hill, NJ 08003
               </p>
+              <Link
+                to="/locations/"
+                className="inline-block bg-indigo-900 rounded-md px-3 py-2 self-end text-white hover:bg-gray-300 hover:text-gray-900 border hover:border-black"
+              >
+                View Map
+              </Link>
             </div>
           </div>
         </div>

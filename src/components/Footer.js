@@ -7,14 +7,16 @@ export default function Footer(props) {
   return (
     <footer className="bg-indigo-900 text-white p-4">
       <div className="container mx-auto grid grid-cols-1 sm:grid-cols-3 gap-3">
-        <div className="text-center flex items-center justify-around sm:justify-center gap-10 sm:gap-8 md:gap-6">
-          <StaticImage
-            src="../images/favicon-32x32.png"
-            className="h-5 w-5"
-            alt="Logo for Rooted Psychotherapy and Counseling"
-            placeholder="blurred"
-            layout="fullWidth"
-          />
+        <div className="text-center flex items-center justify-around sm:justify-around sm:border-r border-indigo-700">
+          <Link to="/">
+            <StaticImage
+              src="../images/favicon-32x32.png"
+              className="h-5 w-5"
+              alt="Logo for Rooted Psychotherapy and Counseling"
+              placeholder="blurred"
+              layout="fullWidth"
+            />
+          </Link>
           <a href="https://www.facebook.com/rootedpsychotherapyorg/">
             <img
               src="https://s2.svgbox.net/social.svg?ic=facebook&color=f9f9f9"
@@ -62,12 +64,12 @@ export default function Footer(props) {
             </svg>
           </a>
         </div>
-        <div className="text-center">
+        <div className="text-center flex flex-col justify-center">
           <Link to="/privacy" className="hover:underline">
             Privacy Policy
           </Link>
         </div>
-        <div className="text-center">
+        <div className="text-center sm:border-l border-indigo-700">
           <p>&copy; Copyright {year}</p>
           <p>Rooted Psychotherapy &amp; Counseling, LLC</p>
         </div>

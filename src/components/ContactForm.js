@@ -39,7 +39,7 @@ export default function ContactForm() {
   return (
     <form onSubmit={handleSubmit(onSubmit)} method="post">
       <label htmlFor="name">
-        <h3>Name</h3>
+        <h3 className="font-semibold">Name</h3>
         <input
           type="text"
           name="name"
@@ -50,7 +50,7 @@ export default function ContactForm() {
         />
       </label>
       <label htmlFor="email">
-        <h3>Email</h3>
+        <h3 className="font-semibold">Email</h3>
         <input
           type="email"
           name="email"
@@ -61,7 +61,7 @@ export default function ContactForm() {
         />
       </label>
       <label htmlFor="phone">
-        <h3>Phone</h3>
+        <h3 className="font-semibold">Phone</h3>
         <input
           type="tel"
           name="phone"
@@ -72,7 +72,7 @@ export default function ContactForm() {
         />
       </label>
       <label htmlFor="message">
-        <h3>Question</h3>
+        <h3 className="font-semibold">Question</h3>
         <textarea
           {...register("message", { required: true })}
           className="mt-0 block w-full px-0.5 border-0 border-b-2 border-gray-200 focus:ring-0 focus:border-black"

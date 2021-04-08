@@ -7,7 +7,7 @@ export default function About({ images }) {
         Services We Offer
       </h2>
       <div className="container mx-auto px-2 sm:px-0 sm:pb-4 sm:pt-4">
-        <div className="grid grid-cols-1 lg:grid-cols-3 lg:gap-6">
+        <div className="grid grid-cols-1 lg:grid-cols-3 lg:gap-6 px-2">
           {images.map(image => {
             return (
               <ServiceCard
