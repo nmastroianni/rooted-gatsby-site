@@ -12,7 +12,7 @@ export default function Footer(props) {
             <StaticImage
               src="../images/favicon-32x32.png"
               className="h-5 w-5"
-              alt="Logo for Rooted Psychotherapy and Counseling"
+              alt="Go to Rooted Psychotherpy's Home Page"
               placeholder="blurred"
               layout="fullWidth"
             />
@@ -20,14 +20,14 @@ export default function Footer(props) {
           <a href="https://www.facebook.com/rootedpsychotherapyorg/">
             <img
               src="https://s2.svgbox.net/social.svg?ic=facebook&color=f9f9f9"
-              alt="facbook icon"
+              alt="Visit our Facebook Page"
               className="h-4 w-4 transition duration-500 ease-in-out transform hover:scale-125"
             />
           </a>
           <a href="https://www.instagram.com/rootedpsychotherapy/">
             <img
               src="https://s2.svgbox.net/social.svg?ic=instagram&color=f9f9f9"
-              alt="instagram icon"
+              alt="Visit our Instagram page"
               className="h-4 w-4 transition duration-500 ease-in-out transform hover:scale-125"
             />
           </a>
@@ -39,6 +39,7 @@ export default function Footer(props) {
               stroke="currentColor"
               className="h-5 w-5 transition duration-500 ease-in-out transform hover:scale-125"
             >
+              <title>Send Us an Email</title>
               <path
                 strokeLinecap="round"
                 strokeLinejoin="round"
@@ -55,6 +56,7 @@ export default function Footer(props) {
               stroke="currentColor"
               className="h-5 w-5 transition duration-500 ease-in-out transform hover:scale-125"
             >
+              <title>Call Us</title>
               <path
                 strokeLinecap="round"
                 strokeLinejoin="round"

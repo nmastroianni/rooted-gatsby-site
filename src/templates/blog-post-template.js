@@ -49,7 +49,7 @@ export default function Template(props) {
       <div className="overflow-hidden bg-gradient-to-b from-indigo-500">
         <GatsbyImage
           image={gatsbyImageData}
-          className="transition duration-500 ease-in-out transform hover:opacity-30 hover:scale-105 origin-center"
+          className="w-full transition duration-500 ease-in-out transform hover:opacity-30 hover:scale-105 origin-center"
           alt="featured image for blog post"
         />
       </div>
@@ -65,7 +65,9 @@ export default function Template(props) {
           <em>{postDate}</em>
         </h3>
 
-        <section>{renderRichText(content, options)}</section>
+        <section className="lg:text-xl">
+          {renderRichText(content, options)}
+        </section>
       </article>
     </Layout>
   )

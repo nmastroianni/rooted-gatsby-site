@@ -21,7 +21,7 @@ export default function ClinicianCard(props) {
         {props.data.psychologyTodayProfile != null ? (
           <a
             href={props.data.psychologyTodayProfile}
-            className="bg-indigo-500 rounded-md px-3 py-2 self-end text-white hover:bg-gray-300 hover:text-gray-900 border hover:border-black "
+            className="bg-indigo-900 rounded-md px-3 py-2 self-end text-white hover:bg-gray-100 hover:text-gray-900 border hover:border-black "
           >
             View Profile
           </a>
