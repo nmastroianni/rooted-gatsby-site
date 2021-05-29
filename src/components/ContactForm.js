@@ -79,7 +79,7 @@ export default function ContactForm() {
           name="message"
           id="message"
           rows="3"
-          placeholder="How can we help, and when can we reach out you?"
+          placeholder="How can we help, and when can we reach out to you?"
         />
       </label>
       <div className="text-center mt-3">
