@@ -42,13 +42,13 @@ export default function Hero() {
             <MdOutlineFiberNew className="absolute -right-7 -top-7 w-10 h-10 text-yellow-400" />
           </a>
         </div>
-        <Link to="#main-nav">
+        <Link to="#main-nav" className="w-8 h-8  absolute bottom-16">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             fill="none"
             viewBox="0 0 24 24"
             stroke="currentColor"
-            className="w-8 h-8 animate-bounce absolute bottom-4"
+            className="animate-bounce"
           >
             <path
               strokeLinecap="round"
