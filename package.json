@@ -2,6 +2,9 @@
   "name": "rooted-psychotherapy",
   "private": true,
   "description": "A Gatsby powered site",
+  "engines": {
+    "node": ">=14.15.0"
+  },
   "version": "0.1.0",
   "license": "0BSD",
   "scripts": {
