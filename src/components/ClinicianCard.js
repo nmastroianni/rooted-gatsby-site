@@ -6,7 +6,7 @@ export default function ClinicianCard(props) {
     <div className="w-full bg-gray-100 shadow rounded-md flex mt-3 mb-4">
       <GatsbyImage
         image={props.data.photo.gatsbyImageData}
-        className=" w-2/5 sm:w-1/4 rounded-l-md filter-grayscale hover:filter-none"
+        className=" w-2/5 sm:w-1/4 rounded-l-md transition duration-500 ease-in-out grayscale hover:grayscale-0"
       />
       <div className="w-3/5 sm:w-3/4 p-2 flex flex-col justify-between">
         <h2 className="text-xl lg:text-2xl text-indigo-800">

@@ -1,11 +1,12 @@
 import React from "react"
 import { useState } from "react"
 import { Link } from "gatsby"
+import { MdOutlineFiberNew } from "react-icons/md"
 
 export default function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false)
   return (
-    <nav className="bg-indigo-500">
+    <nav id="main-nav" className="bg-indigo-500">
       <div className="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8">
         <div className="relative flex items-center justify-between h-16">
           <div className="absolute inset-y-0 left-0 flex items-center lg:hidden">
@@ -75,24 +76,31 @@ export default function Navbar() {
                 >
                   Contact Us
                 </Link>
+                <a
+                  href="https://www.therapyportal.com/p/rootedpsychotherapy08003/"
+                  className="text-gray-100 hover:bg-indigo-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium relative"
+                >
+                  Client Portal
+                  <MdOutlineFiberNew className="absolute right-0 -top-1 w-6 h-6 text-yellow-400" />
+                </a>
                 <Link
                   to="/"
                   activeClassName="active"
-                  className="text-gray-200 hover:bg-indigo-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
+                  className="text-gray-100 hover:bg-indigo-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
                 >
                   Home
                 </Link>
                 <Link
                   to="/clinicians/"
                   activeClassName="active"
-                  className="text-gray-200 hover:bg-indigo-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
+                  className="text-gray-100 hover:bg-indigo-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
                 >
                   Our Team
                 </Link>
                 <Link
                   to="/locations/"
                   activeClassName="active"
-                  className="text-gray-200 hover:bg-indigo-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
+                  className="text-gray-100 hover:bg-indigo-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
                 >
                   Our Office
                 </Link>
@@ -100,7 +108,7 @@ export default function Navbar() {
                   to="/blog/"
                   activeClassName="active"
                   partiallyActive={true}
-                  className="text-gray-200 hover:bg-indigo-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
+                  className="text-gray-100 hover:bg-indigo-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
                 >
                   Blog
                 </Link>
@@ -111,6 +119,13 @@ export default function Navbar() {
       </div>
       <div className={(menuOpen ? "block " : "hidden ") + "lg:hidden"}>
         <div className="px-2 pt-2 pb-3 space-y-1 lg:hidden flex flex-col">
+          <a
+            href="https://www.therapyportal.com/p/rootedpsychotherapy08003/"
+            className="rounded-md px-3 py-2 border-2 border-white text-center text-indigo-700 bg-white relative"
+          >
+            Client Portal
+            <MdOutlineFiberNew className="absolute right-1/2 translate-x-1/2 -top-1 w-6 h-6 text-yellow-400" />
+          </a>
           <Link
             to="/contact/"
             className="text-gray-300 hover:bg-indigo-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
