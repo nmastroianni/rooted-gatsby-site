@@ -11,7 +11,7 @@ export default function Locations(props) {
           Where We Are Located
         </h1>
         <h2 className="text-xl lg:text-2xl text-indigo-800 text-center m-2 sm:m-3">
-          1878 East Marlton Pike Suite 5
+          1878 East Marlton Pike Suite 2
         </h2>
         <h3 className="w-3/4 mx-auto mb-2 sm:mb-4 text-lg bg-indigo-500 rounded-md px-3 py-2 self-end text-white hover:bg-gray-300 hover:text-gray-900 border hover:border-black">
           <a href="tel:1-856-375-2440">
