@@ -48,7 +48,7 @@ export default function Home(props) {
                 Address
               </h3>
               <p className="mb-2 sm:mb-3">
-                1878 East Marlton Pike Suite 5 <br />
+                1878 East Marlton Pike Suite 2 <br />
                 Cherry Hill, NJ 08003
               </p>
               <Link
