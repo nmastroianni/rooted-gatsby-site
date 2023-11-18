@@ -2,7 +2,6 @@ import React from "react"
 
 import Layout from "../components/Layout"
 import Seo from "../components/Seo"
-import ContactForm from "../components/ContactForm"
 
 export default function Contact({ location }) {
   return (
@@ -12,7 +11,7 @@ export default function Contact({ location }) {
         Contact Us
       </h1>
       <h2 className="text-center text-lg sm:text-xl lg:text-2xl mt-1 sm:mt-2 lg:mt-3">
-        Send Us an Email or Call Us:{" "}
+        Call Us:{" "}
         <a
           href="tel:1-856-375-2440"
           className="text-indigo-800 hover:underline"
@@ -20,8 +19,14 @@ export default function Contact({ location }) {
           1-856-375-2440
         </a>
       </h2>
-      <div className="container max-w-3xl mx-auto rounded-md p-2">
-        <ContactForm></ContactForm>
+      <div className="container max-w-3xl mx-auto rounded-md p-2 text-center my-6">
+        <p className="my-8">Would you like to be our client?</p>
+        <a
+          href="https://forms.gle/jMC1AnNUqGqxd1ZLA"
+          className="bg-indigo-800 text-white px-3 py-2 rounded-md w-1/4 disabled:bg-gray-800"
+        >
+          Complete an Intake Form
+        </a>
       </div>
     </Layout>
   )
